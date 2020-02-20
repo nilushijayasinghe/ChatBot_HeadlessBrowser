@@ -4,7 +4,7 @@ pipeline {
         stage('Compile Stage'){
 
             steps {
-				sh 'rm -rf chat_bot_rc'
+				sh 'rm -rf chat_bot_headless_rc'
                 sh 'git clone https://github.com/nilushijayasinghe/ChatBot_HeadlessBrowser.git chat_bot_headless_rc'
                 sh 'cd chat_bot_headless_rc'
                 sh 'mvn clean compile'
